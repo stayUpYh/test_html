@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Generated Clothing Store Workflow - Innerule</title>
+    <style>
+      * {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f8f8f8;
+        line-height: 1.8;
+      }
+
+      .section {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 30px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .section-title {
+        color: #333;
+        font-size: 1.8em;
+        margin-bottom: 25px;
+        border-bottom: 3px solid #e0e0e0;
+        padding-bottom: 10px;
+      }
+
+      /* 关键修改：改为垂直排列，增加容器宽度适配 */
+      .image-group {
+        /* 移除网格布局，改用flex垂直排列 */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 图片居中 */
+        gap: 40px; /* 增加垂直间距 */
+        margin-top: 40px;
+      }
+
+      .image-card {
+        /* 限制单个图片容器宽度，保持视觉平衡 */
+        max-width: 800px; /* 图片最大宽度，可根据需求调整 */
+        text-align: center;
+      }
+
+      .image-card img {
+        /* 优化图片尺寸和边框 */
+        width: 100%; /* 撑满容器宽度 */
+        height: auto; /* 自动保持宽高比，避免拉伸变形 */
+        max-height: 500px; /* 限制最大高度，防止图片过高 */
+        object-fit: contain; /* 内容适应容器，保持完整显示 */
+        border-radius: 12px; /* 圆角更柔和 */
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); /* 增加投影提升立体感 */
+        margin-bottom: 20px; /* 增加图片与文字间距 */
+      }
+
+      .prompt-text {
+        color: #666;
+        font-size: 1.1em;
+        line-height: 1.6; /* 增加行高提升可读性 */
+        padding: 0 20px; /* 文字左右留白 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 第一部分：Gemini优化提示词生成图片 -->
+    <div class="section">
+      <h2 class="section-title">
+        1. Using my original prompt words to optimize and generate an example
+        image for Gemini
+      </h2>
+      <div class="image-group">
+        <!-- 图片1 -->
+        <div class="image-card">
+          <img
+            src="https://github.com/stayUpYh/AI-Image/blob/main/image3.png?raw=true"
+            alt="Gemini Optimized Prompt Example 1"
+          />
+          <p class="prompt-text">
+            A person confidently wearing Innerule clothing, embodying maturity,
+            in a calm, natural setting.<br />
+            <em>Highlight: Grounded self-awareness through natural styling.</em>
+          </p>
+        </div>
+
+        <!-- 图片2 -->
+        <div class="image-card">
+          <img
+            src="https://github.com/stayUpYh/AI-Image/blob/main/image1.png?raw=true"
+            alt="Gemini Optimized Prompt Example 2"
+          />
+          <p class="prompt-text">
+            Close-up of Innerule apparel fabric details, showcasing quality and
+            thoughtful design.<br />
+            <em
+              >Highlight: Brand focus on craftsmanship and material
+              excellence.</em
+            >
+          </p>
+        </div>
+
+        <!-- 图片3 -->
+        <div class="image-card">
+          <img
+            src="https://github.com/stayUpYh/AI-Image/blob/main/image2.png?raw=true"
+            alt="Gemini Optimized Prompt Example 3"
+          />
+          <p class="prompt-text">
+            Diverse individuals expressing independent style via Innerule
+            clothing.<br />
+            <em>Highlight: Balanced confidence through brand diversity.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第二部分：Kerea使用Gemini提示词 -->
+    <div class="section">
+      <h2 class="section-title">
+        2. Try using the prompt words provided by Gemini in Kerea
+      </h2>
+      <div class="image-group">
+        <!-- 图片4 -->
+        <div class="image-card">
+          <img
+            src="https://github.com/stayUpYh/AI-Image/blob/main/image4.png?raw=true"
+            alt="Kerea Implementation of Gemini Prompts"
+          />
+          <p class="prompt-text">
+            AI-generated image using Gemini prompts in Kerea platform.<br />
+            <em>Focus: Translating text prompts into visual aesthetics.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第三部分：添加主题优化提示词 -->
+    <div class="section">
+      <h2 class="section-title">
+        3. Add image prompts and themes, and then optimize the prompt words
+      </h2>
+      <div class="image-group">
+        <!-- 图片5 -->
+        <div class="image-card">
+          <img
+            src="https://github.com/stayUpYh/AI-Image/blob/main/image4.png?raw=true"
+            alt="Themed Prompt Optimization 1"
+          />
+          <p class="prompt-text">
+            "Maturity and Transformation" theme applied to clothing
+            visualization.<br />
+            <em
+              >Key elements: Authentic self-expression through fashion
+              evolution.</em
+            >
+          </p>
+        </div>
+
+        <!-- 图片6 -->
+        <div class="image-card">
+          <img
+            src="https://github.com/stayUpYh/AI-Image/blob/main/image5.png?raw=true"
+            alt="Themed Prompt Optimization 2"
+          />
+          <p class="prompt-text">
+            "Self Awareness" theme highlighting clothing as self-expression.<br />
+            <em>Key elements: Confidence boost through comfortable styling.</em>
+          </p>
+        </div>
+
+        <!-- 图片7 -->
+        <div class="image-card">
+          <img
+            src="https://github.com/stayUpYh/AI-Image/blob/main/image6.png?raw=true"
+            alt="Themed Prompt Optimization 3"
+          />
+          <p class="prompt-text">
+            "Balanced Rationality" theme showcasing minimalist flat lay.<br />
+            <em
+              >Key elements: Harmonious design reflecting brand philosophy.</em
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
